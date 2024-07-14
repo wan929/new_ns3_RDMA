@@ -1,0 +1,1015 @@
+ENABLE_QCN			Yes
+USE_DYNAMIC_PFC_THRESHOLD	Yes
+PACKET_PAYLOAD_SIZE		1000
+TOPOLOGY_FILE			mix/topology_line_lg.txt
+FLOW_FILE			mix/flow_test.txt
+TRACE_FILE			mix/trace.txt
+TRACE_OUTPUT_FILE		mix/mix_topology_line_lg_flow_test_dcqcn_1_1000_2_0_0_0_0.tr
+FCT_OUTPUT_FILE		mix/fct_topology_line_lg_flow_test_dcqcn_1_1000_2_0_0_0_0.txt
+PFC_OUTPUT_FILE				mix/pfc_topology_line_lg_flow_test_dcqcn_1_1000_2_0_0_0_0.txt
+GOODPUT_OUTPUT_FILE		mix/goodput_topology_line_lg_flow_test_dcqcn_1_1000_2_0_0_0_0.txt
+data_OUTPUT_FILE		mix/data_topology_line_lg_flow_test_dcqcn_1_1000_2_0_0_0_0.txt
+SIMULATOR_STOP_TIME		4
+CC_MODE		1
+ALPHA_RESUME_INTERVAL		1
+RATE_DECREASE_INTERVAL		4
+CLAMP_TARGET_RATE		No
+RP_TIMER			300
+EWMA_GAIN			0.00390625
+FAST_RECOVERY_TIMES		1
+RATE_AI				20Mb/s
+RATE_HAI			200Mb/s
+MIN_RATE		1000Mb/s
+DCTCP_RATE_AI				1000Mb/s
+ERROR_RATE_PER_LINK		0
+L2_CHUNK_SIZE			4000
+L2_ACK_INTERVAL			1
+L2_BACK_TO_ZERO			No
+HAS_WIN		0
+GLOBAL_T		1
+VAR_WIN		0
+FAST_REACT		0
+U_TARGET		0.95
+MI_THRESH		0
+INT_MULTI				1
+MULTI_RATE				0
+SAMPLE_FEEDBACK				0
+PINT_LOG_BASE				1.01
+PINT_PROB				1
+RATE_BOUND		1
+ACK_HIGH_PRIO		1
+LINK_DOWN				0 0 0
+ENABLE_TRACE				0
+KMAX_MAP				 100000000000 1600 400000000000 6400
+KMIN_MAP				 100000000000 400 400000000000 1600
+PMAX_MAP				 100000000000 0.2 400000000000 0.2
+BUFFER_SIZE				32
+RTO				1
+LOSS_RATE				1000
+RECOVERY_MODE				2
+LOOKUP_TABLE_SIZE				0
+FILTER_SIZE				0
+FILTER_TIME				0
+ONLY_LAST_ACK				0
+QLEN_MON_FILE				mix/qlen_topology_line_lg_flow_test_dcqcn_1_1000_2_0_0_0_0.txt
+QLEN_MON_START				2000000000
+QLEN_MON_END				3000000000
+maxRtt=12480 maxBdp=156000
+Running Simulation.
++2000077494.0ns lost udp 3 1 0b000001 0b000601 10000 100 840000 840
++2000078581.0ns receive loss notification and update ReTxReqs 840
++2000079182.0ns copyqueue retransmit 2 2 840000 840
++2000080350.0ns drop protected normal data p ackNo 3 1 840 841
++2000082447.0ns receive lgpause 2 2
++2000097234.0ns receive lgresume 2 2
++2000103032.0ns receive lgpause 2 2
++2000110008.0ns receive lgresume 2 2
++2000111932.0ns lost udp 3 1 0b000001 0b000601 10000 100 990000 992
++2000113019.0ns receive loss notification and update ReTxReqs 992
++2000114460.0ns copyqueue retransmit 2 2 990000 992
++2000115628.0ns drop protected normal data p ackNo 3 1 992 993
++2000116898.0ns receive lgpause 2 2
++2000121690.0ns receive lgresume 2 2
++2000127488.0ns receive lgpause 2 2
++2000134296.0ns receive lgresume 2 2
++2000191408.0ns lost udp 3 1 0b000001 0b000601 10000 100 1798000 1802
++2000191576.0ns lost udp 3 1 0b000001 0b000601 10000 100 1800000 1804
++2000192495.0ns receive loss notification and update ReTxReqs 1802
++2000192663.0ns receive loss notification and update ReTxReqs 1802
++2000192663.0ns receive loss notification and update ReTxReqs 1804
++2000193096.0ns copyqueue retransmit 2 2 1798000 1802
++2000193264.0ns copyqueue retransmit 2 2 1800000 1804
++2000194264.0ns drop protected normal data p ackNo 3 1 1802 1803
++2000196112.0ns lost udp 3 1 0b000001 0b000601 10000 100 1850000 1854
++2000196458.0ns receive lgpause 2 2
++2000197199.0ns receive loss notification and update ReTxReqs 1854
++2000198388.0ns copyqueue retransmit 2 2 1850000 1854
++2000206716.0ns receive lgresume 2 2
++2000210918.0ns receive lgpause 2 2
++2000222193.0ns receive lgresume 2 2
++2000513981.0ns lost udp 3 1 0b000001 0b000601 10000 100 2338000 2583
++2000514987.0ns receive loss notification and update ReTxReqs 2583
++2000516151.0ns copyqueue retransmit 2 2 2338000 2583
++2000517389.0ns drop protected normal data p ackNo 3 1 2583 2584
++2000522927.0ns receive lgpause 2 2
++2000534764.0ns receive lgresume 2 2
++2000537609.0ns receive lgpause 2 2
++2000544319.0ns receive lgresume 2 2
++2000547270.0ns receive lgpause 2 2
++2000551729.0ns receive lgresume 2 2
++2000557530.0ns receive lgpause 2 2
++2000565013.0ns receive lgresume 2 2
++2001064373.0ns lost udp 3 1 0b000001 0b000601 10000 100 6503000 10526
++2001065379.0ns receive loss notification and update ReTxReqs 10526
++2001065401.0ns copyqueue retransmit 2 2 6503000 10526
++2001066650.0ns drop protected normal data p ackNo 3 1 10526 10527
++2001070528.0ns receive lgpause 2 2
++2001083114.0ns receive lgresume 2 2
++2001088395.0ns receive lgpause 2 2
++2001095723.0ns receive lgresume 2 2
++2001165435.0ns lost udp 3 1 0b000001 0b000601 10000 100 7449000 11533
++2001166522.0ns receive loss notification and update ReTxReqs 11533
++2001167123.0ns copyqueue retransmit 2 2 7449000 11533
++2001168291.0ns drop protected normal data p ackNo 3 1 11533 11534
++2001170559.0ns lost udp 3 1 0b000001 0b000601 10000 100 7508000 11592
++2001171406.0ns receive lgpause 2 2
++2001171646.0ns receive loss notification and update ReTxReqs 11592
++2001171911.0ns copyqueue retransmit 2 2 7508000 11592
++2001177542.0ns receive lgresume 2 2
++2001181324.0ns receive lgpause 2 2
++2001186464.0ns receive lgresume 2 2
++2001234084.0ns lost udp 3 1 0b000001 0b000601 10000 100 8131000 12218
++2001235171.0ns receive loss notification and update ReTxReqs 12218
++2001235772.0ns copyqueue retransmit 2 2 8131000 12218
++2001236940.0ns drop protected normal data p ackNo 3 1 12218 12220
++2001384108.0ns lost udp 3 1 0b000001 0b000601 10000 100 9824000 14606
++2001385114.0ns receive loss notification and update ReTxReqs 14606
++2001385124.0ns copyqueue retransmit 2 2 9824000 14606
++2001386282.0ns lost udp 3 1 0b000001 0b000601 10000 100 9824000 14606
++2001389320.0ns receive lgpause 2 2
++2001403292.0ns receive lgresume 2 2
++2001409135.0ns receive lgpause 2 2
++2001416447.0ns receive lgresume 2 2
++2001427191.0ns lost udp 3 1 0b000001 0b000601 10000 100 10076000 14911
++2001428278.0ns receive loss notification and update ReTxReqs 14911
++2001428879.0ns copyqueue retransmit 2 2 10076000 14911
++2001430047.0ns drop protected normal data p ackNo 3 1 14911 14912
++2001432493.0ns receive lgpause 2 2
++2001437789.0ns receive lgresume 2 2
++2001522117.0ns lost udp 3 1 0b000001 0b000601 10000 100 11142000 15978
++2001523204.0ns receive loss notification and update ReTxReqs 15978
++2001523805.0ns copyqueue retransmit 2 2 11142000 15978
++2001524973.0ns drop protected normal data p ackNo 3 1 15978 15979
++2001527083.0ns receive lgpause 2 2
++2001532715.0ns receive lgresume 2 2
++2001686259.0ns lost udp 3 1 0b000001 0b000601 10000 100 13028000 17865
++2001687346.0ns receive loss notification and update ReTxReqs 17865
++2001687947.0ns copyqueue retransmit 2 2 13028000 17865
++2001689115.0ns drop protected normal data p ackNo 3 1 17865 17866
++2001691225.0ns receive lgpause 2 2
++2001697025.0ns receive lgresume 2 2
++2001744813.0ns lost udp 3 1 0b000001 0b000601 10000 100 13655000 18493
++2001745900.0ns receive loss notification and update ReTxReqs 18493
++2001746501.0ns copyqueue retransmit 2 2 13655000 18493
++2001747669.0ns drop protected normal data p ackNo 3 1 18493 18494
++2001749779.0ns receive lgpause 2 2
++2001755411.0ns receive lgresume 2 2
++2001877707.0ns lost udp 3 1 0b000001 0b000601 10000 100 15169000 20008
++2001878794.0ns receive loss notification and update ReTxReqs 20008
++2001879395.0ns copyqueue retransmit 2 2 15169000 20008
++2001880563.0ns drop protected normal data p ackNo 3 1 20008 20009
++2001882673.0ns receive lgpause 2 2
++2001888473.0ns receive lgresume 2 2
++2001906609.0ns lost udp 3 1 0b000001 0b000601 10000 100 15443000 20283
++2001907696.0ns receive loss notification and update ReTxReqs 20283
++2001908297.0ns copyqueue retransmit 2 2 15443000 20283
++2001909465.0ns drop protected normal data p ackNo 3 1 20283 20284
++2001911575.0ns receive lgpause 2 2
++2001917207.0ns receive lgresume 2 2
++2001929295.0ns lost udp 3 1 0b000001 0b000601 10000 100 15645000 20486
++2001930382.0ns receive loss notification and update ReTxReqs 20486
++2001930983.0ns copyqueue retransmit 2 2 15645000 20486
++2001932151.0ns drop protected normal data p ackNo 3 1 20486 20487
++2001934261.0ns receive lgpause 2 2
++2001940061.0ns receive lgresume 2 2
++2001976257.0ns lost udp 3 1 0b000001 0b000601 10000 100 16134000 20976
++2001977344.0ns receive loss notification and update ReTxReqs 20976
++2001977945.0ns copyqueue retransmit 2 2 16134000 20976
++2001979113.0ns drop protected normal data p ackNo 3 1 20976 20977
++2001981223.0ns receive lgpause 2 2
++2001986855.0ns receive lgresume 2 2
++2002096551.0ns lost udp 3 1 0b000001 0b000601 10000 100 17498000 22341
++2002097638.0ns receive loss notification and update ReTxReqs 22341
++2002098239.0ns copyqueue retransmit 2 2 17498000 22341
++2002099407.0ns drop protected normal data p ackNo 3 1 22341 22342
++2002101517.0ns receive lgpause 2 2
++2002107317.0ns receive lgresume 2 2
++2002162161.0ns lost udp 3 1 0b000001 0b000601 10000 100 18209000 23053
++2002163248.0ns receive loss notification and update ReTxReqs 23053
++2002163849.0ns copyqueue retransmit 2 2 18209000 23053
++2002165017.0ns drop protected normal data p ackNo 3 1 23053 23054
++2002167127.0ns receive lgpause 2 2
++2002172759.0ns receive lgresume 2 2
++2002374055.0ns lost udp 3 1 0b000001 0b000601 10000 100 20103000 26256
++2002375061.0ns receive loss notification and update ReTxReqs 26256
++2002375115.0ns copyqueue retransmit 2 2 20103000 26256
++2002376283.0ns drop protected normal data p ackNo 3 1 26256 26257
++2002380950.0ns receive lgpause 2 2
++2002393119.0ns receive lgresume 2 2
++2002396135.0ns lost udp 3 1 0b000001 0b000601 10000 100 20193000 26409
++2002397222.0ns receive loss notification and update ReTxReqs 26409
++2002397823.0ns copyqueue retransmit 2 2 20193000 26409
++2002398400.0ns receive lgpause 2 2
++2002405647.0ns receive lgresume 2 2
++2002408163.0ns receive lgpause 2 2
++2002411614.0ns receive lgresume 2 2
++2002414882.0ns lost udp 3 1 0b000001 0b000601 10000 100 20287000 26505
++2002415969.0ns receive loss notification and update ReTxReqs 26505
++2002416488.0ns receive lgpause 2 2
++2002416570.0ns copyqueue retransmit 2 2 20287000 26505
++2002423890.0ns receive lgresume 2 2
++2002426826.0ns receive lgpause 2 2
++2002430277.0ns receive lgresume 2 2
++2002433797.0ns lost udp 3 1 0b000001 0b000601 10000 100 20384000 26604
++2002434884.0ns receive loss notification and update ReTxReqs 26604
++2002435485.0ns copyqueue retransmit 2 2 20384000 26604
++2002435487.0ns receive lgpause 2 2
++2002443057.0ns receive lgresume 2 2
++2002445993.0ns receive lgpause 2 2
++2002449444.0ns receive lgresume 2 2
++2002454486.0ns receive lgpause 2 2
++2002461888.0ns receive lgresume 2 2
++2002506484.0ns lost udp 3 1 0b000001 0b000601 10000 100 21031000 27254
++2002507571.0ns receive loss notification and update ReTxReqs 27254
++2002508172.0ns copyqueue retransmit 2 2 21031000 27254
++2002509340.0ns drop protected normal data p ackNo 3 1 27254 27255
++2002512455.0ns receive lgpause 2 2
++2002518423.0ns receive lgresume 2 2
++2002628035.0ns lost udp 3 1 0b000001 0b000601 10000 100 22405000 28629
++2002629122.0ns receive loss notification and update ReTxReqs 28629
++2002629723.0ns copyqueue retransmit 2 2 22405000 28629
++2002630891.0ns drop protected normal data p ackNo 3 1 28629 28630
++2002633001.0ns receive lgpause 2 2
++2002637877.0ns receive lgresume 2 2
++2002650889.0ns lost udp 3 1 0b000001 0b000601 10000 100 22618000 28843
++2002651976.0ns receive loss notification and update ReTxReqs 28843
++2002652577.0ns copyqueue retransmit 2 2 22618000 28843
++2002655687.0ns receive lgpause 2 2
++2002661991.0ns receive lgresume 2 2
++2002668199.0ns lost udp 3 1 0b000001 0b000601 10000 100 22748000 28974
++2002669286.0ns receive loss notification and update ReTxReqs 28974
++2002669887.0ns copyqueue retransmit 2 2 22748000 28974
++2002671055.0ns drop protected normal data p ackNo 3 1 28974 28975
++2002673165.0ns receive lgpause 2 2
++2002678293.0ns receive lgresume 2 2
++2002692565.0ns lost udp 3 1 0b000001 0b000601 10000 100 22976000 29203
++2002693652.0ns receive loss notification and update ReTxReqs 29203
++2002694253.0ns copyqueue retransmit 2 2 22976000 29203
++2002697363.0ns receive lgpause 2 2
++2002703667.0ns receive lgresume 2 2
++2002766911.0ns lost udp 3 1 0b000001 0b000601 10000 100 23785000 30013
++2002767998.0ns receive loss notification and update ReTxReqs 30013
++2002768599.0ns copyqueue retransmit 2 2 23785000 30013
++2002769767.0ns drop protected normal data p ackNo 3 1 30013 30014
++2002771877.0ns receive lgpause 2 2
++2002777005.0ns receive lgresume 2 2
++2002788757.0ns lost udp 3 1 0b000001 0b000601 10000 100 23983000 30212
++2002789844.0ns receive loss notification and update ReTxReqs 30212
++2002790445.0ns copyqueue retransmit 2 2 23983000 30212
++2002793461.0ns lost udp 3 1 0b000001 0b000601 10000 100 24037000 30266
++2002793555.0ns receive lgpause 2 2
++2002794548.0ns receive loss notification and update ReTxReqs 30266
++2002794561.0ns copyqueue retransmit 2 2 24037000 30266
++2002799943.0ns receive lgresume 2 2
++2002804571.0ns receive lgpause 2 2
++2002810377.0ns receive lgresume 2 2
++2002891177.0ns lost udp 3 1 0b000001 0b000601 10000 100 25057000 31289
++2002892264.0ns receive loss notification and update ReTxReqs 31289
++2002892865.0ns copyqueue retransmit 2 2 25057000 31289
++2002894033.0ns drop protected normal data p ackNo 3 1 31289 31290
++2002896143.0ns receive lgpause 2 2
++2002901775.0ns receive lgresume 2 2
++2002922599.0ns lost udp 3 1 0b000001 0b000601 10000 100 25363000 31596
++2002923686.0ns receive loss notification and update ReTxReqs 31596
++2002924287.0ns copyqueue retransmit 2 2 25363000 31596
++2002925455.0ns drop protected normal data p ackNo 3 1 31596 31597
++2002927565.0ns receive lgpause 2 2
++2002933365.0ns receive lgresume 2 2
++2003194299.0ns lost udp 3 1 0b000001 0b000601 10000 100 28040000 36477
++2003195305.0ns receive loss notification and update ReTxReqs 36477
++2003195361.0ns copyqueue retransmit 2 2 28040000 36477
++2003196609.0ns drop protected normal data p ackNo 3 1 36477 36478
++2003199894.0ns receive lgpause 2 2
++2003213133.0ns receive lgresume 2 2
++2003218666.0ns receive lgpause 2 2
++2003225895.0ns receive lgresume 2 2
++2003282923.0ns lost udp 3 1 0b000001 0b000601 10000 100 28838000 37333
++2003284010.0ns receive loss notification and update ReTxReqs 37333
++2003284611.0ns copyqueue retransmit 2 2 28838000 37333
++2003285779.0ns drop protected normal data p ackNo 3 1 37333 37334
++2003288558.0ns receive lgpause 2 2
++2003294274.0ns receive lgresume 2 2
++2003296534.0ns lost udp 3 1 0b000001 0b000601 10000 100 28930000 37426
++2003297621.0ns receive loss notification and update ReTxReqs 37426
++2003297802.0ns copyqueue retransmit 2 2 28930000 37426
++2003298970.0ns drop protected normal data p ackNo 3 1 37426 37427
++2003301500.0ns receive lgpause 2 2
++2003306628.0ns receive lgresume 2 2
++2003527916.0ns lost udp 3 1 0b000001 0b000601 10000 100 31323000 41287
++2003528922.0ns receive loss notification and update ReTxReqs 41287
++2003528976.0ns copyqueue retransmit 2 2 31323000 41287
++2003530205.0ns drop protected normal data p ackNo 3 1 41287 41288
++2003533498.0ns receive lgpause 2 2
++2003547263.0ns receive lgresume 2 2
++2003553048.0ns receive lgpause 2 2
++2003560103.0ns receive lgresume 2 2
++2003582439.0ns lost udp 3 1 0b000001 0b000601 10000 100 31712000 41735
++2003583526.0ns receive loss notification and update ReTxReqs 41735
++2003584127.0ns copyqueue retransmit 2 2 31712000 41735
++2003585295.0ns drop protected normal data p ackNo 3 1 41735 41736
++2003587573.0ns receive lgpause 2 2
++2003592617.0ns receive lgresume 2 2
++2003683749.0ns lost udp 3 1 0b000001 0b000601 10000 100 32857000 42881
++2003684836.0ns receive loss notification and update ReTxReqs 42881
++2003685437.0ns copyqueue retransmit 2 2 32857000 42881
++2003686605.0ns drop protected normal data p ackNo 3 1 42881 42883
++2003777537.0ns lost udp 3 1 0b000001 0b000601 10000 100 33802000 44709
++2003778543.0ns receive loss notification and update ReTxReqs 44709
++2003780021.0ns copyqueue retransmit 2 2 33802000 44709
++2003781205.0ns drop protected normal data p ackNo 3 1 44709 44711
++2003783050.0ns receive lgpause 2 2
++2003796278.0ns receive lgresume 2 2
++2003801869.0ns receive lgpause 2 2
++2003809277.0ns receive lgresume 2 2
++2003811033.0ns lost udp 3 1 0b000001 0b000601 10000 100 33943000 44907
++2003812120.0ns receive loss notification and update ReTxReqs 44907
++2003813225.0ns copyqueue retransmit 2 2 33943000 44907
++2003814393.0ns drop protected normal data p ackNo 3 1 44907 44908
++2003816668.0ns receive lgpause 2 2
++2003822216.0ns receive lgresume 2 2
++2004405637.0ns lost udp 3 1 0b000001 0b000601 10000 100 40083000 55619
++2004406643.0ns receive loss notification and update ReTxReqs 55619
++2004406688.0ns copyqueue retransmit 2 2 40083000 55619
++2004407905.0ns drop protected normal data p ackNo 3 1 55619 55620
++2004411142.0ns receive lgpause 2 2
++2004424537.0ns receive lgresume 2 2
++2004430311.0ns receive lgpause 2 2
++2004437542.0ns receive lgresume 2 2
++2004765978.0ns lost udp 3 1 0b000001 0b000601 10000 100 43703000 61563
++2004766984.0ns receive loss notification and update ReTxReqs 61563
++2004766990.0ns copyqueue retransmit 2 2 43703000 61563
++2004768225.0ns drop protected normal data p ackNo 3 1 61563 61564
++2004771463.0ns receive lgpause 2 2
++2004785297.0ns receive lgresume 2 2
++2004791155.0ns receive lgpause 2 2
++2004798299.0ns receive lgresume 2 2
++2004808875.0ns lost udp 3 1 0b000001 0b000601 10000 100 43953000 61870
++2004809962.0ns receive loss notification and update ReTxReqs 61870
++2004810563.0ns copyqueue retransmit 2 2 43953000 61870
++2004811731.0ns drop protected normal data p ackNo 3 1 61870 61871
++2004814009.0ns receive lgpause 2 2
++2004819053.0ns receive lgresume 2 2
++2004837021.0ns lost udp 3 1 0b000001 0b000601 10000 100 44227000 62145
++2004838108.0ns receive loss notification and update ReTxReqs 62145
++2004838709.0ns copyqueue retransmit 2 2 44227000 62145
++2004839877.0ns drop protected normal data p ackNo 3 1 62145 62147
++2004924801.0ns lost udp 3 1 0b000001 0b000601 10000 100 45270000 63188
++2004925888.0ns receive loss notification and update ReTxReqs 63188
++2004926153.0ns copyqueue retransmit 2 2 45270000 63188
++2005029318.0ns lost udp 3 1 0b000001 0b000601 10000 100 46363000 65117
++2005030324.0ns receive loss notification and update ReTxReqs 65117
++2005030397.0ns copyqueue retransmit 2 2 46363000 65117
++2005031568.0ns drop protected normal data p ackNo 3 1 65117 65118
++2005034806.0ns receive lgpause 2 2
++2005048649.0ns receive lgresume 2 2
++2005054507.0ns receive lgpause 2 2
++2005055529.0ns lost udp 3 1 0b000001 0b000601 10000 100 46499000 65310
++2005056535.0ns receive loss notification and update ReTxReqs 65310
++2005057045.0ns copyqueue retransmit 2 2 46499000 65310
++2005061822.0ns receive lgresume 2 2
++2005067626.0ns receive lgpause 2 2
++2005078640.0ns receive lgresume 2 2
++2005159692.0ns lost udp 3 1 0b000001 0b000601 10000 100 47522000 800
++2005160779.0ns receive loss notification and update ReTxReqs 800
++2005161380.0ns copyqueue retransmit 2 2 47522000 800
++2005162548.0ns drop protected normal data p ackNo 3 1 800 802
++2005165740.0ns lost udp 3 1 0b000001 0b000601 10000 100 47592000 870
++2005166827.0ns receive loss notification and update ReTxReqs 870
++2005167092.0ns copyqueue retransmit 2 2 47592000 870
++2005177836.0ns lost udp 3 1 0b000001 0b000601 10000 100 47734000 1012
++2005178923.0ns receive loss notification and update ReTxReqs 1012
++2005180280.0ns copyqueue retransmit 2 2 47734000 1012
++2005181448.0ns drop protected normal data p ackNo 3 1 1012 1013
++2005182802.0ns receive lgpause 2 2
++2005187930.0ns receive lgresume 2 2
++2005193728.0ns receive lgpause 2 2
++2005200536.0ns receive lgresume 2 2
++2005490856.0ns lost udp 3 1 0b000001 0b000601 10000 100 51025000 5948
++2005491862.0ns receive loss notification and update ReTxReqs 5948
++2005493276.0ns copyqueue retransmit 2 2 51025000 5948
++2005494489.0ns drop protected normal data p ackNo 3 1 5948 5950
++2005496350.0ns receive lgpause 2 2
++2005509848.0ns receive lgresume 2 2
++2005515349.0ns receive lgpause 2 2
++2005522844.0ns receive lgresume 2 2
++2005537452.0ns lost udp 3 1 0b000001 0b000601 10000 100 51319000 6299
++2005538539.0ns receive loss notification and update ReTxReqs 6299
++2005539140.0ns copyqueue retransmit 2 2 51319000 6299
++2005540308.0ns drop protected normal data p ackNo 3 1 6299 6300
++2005543255.0ns receive lgpause 2 2
++2005549139.0ns receive lgresume 2 2
++2005764987.0ns lost udp 3 1 0b000001 0b000601 10000 100 53794000 9681
++2005765993.0ns receive loss notification and update ReTxReqs 9681
++2005766027.0ns copyqueue retransmit 2 2 53794000 9681
++2005767234.0ns drop protected normal data p ackNo 3 1 9681 9682
++2005770472.0ns receive lgpause 2 2
++2005784306.0ns receive lgresume 2 2
++2005790164.0ns receive lgpause 2 2
++2005797308.0ns receive lgresume 2 2
++2005877184.0ns lost udp 3 1 0b000001 0b000601 10000 100 54869000 10813
++2005878271.0ns receive loss notification and update ReTxReqs 10813
++2005878872.0ns copyqueue retransmit 2 2 54869000 10813
++2005880040.0ns drop protected normal data p ackNo 3 1 10813 10814
++2005882318.0ns receive lgpause 2 2
++2005887362.0ns receive lgresume 2 2
++2005981500.0ns lost udp 3 1 0b000001 0b000601 10000 100 55981000 12312
++2005982506.0ns receive loss notification and update ReTxReqs 12312
++2005982534.0ns copyqueue retransmit 2 2 55981000 12312
++2005983747.0ns drop protected normal data p ackNo 3 1 12312 12313
++2005986985.0ns receive lgpause 2 2
++2006000819.0ns receive lgresume 2 2
++2006006677.0ns receive lgpause 2 2
++2006013821.0ns receive lgresume 2 2
++2006112849.0ns lost udp 3 1 0b000001 0b000601 10000 100 57284000 13672
++2006113936.0ns receive loss notification and update ReTxReqs 13672
++2006114537.0ns copyqueue retransmit 2 2 57284000 13672
++2006115705.0ns drop protected normal data p ackNo 3 1 13672 13673
++2006117983.0ns receive lgpause 2 2
++2006123027.0ns receive lgresume 2 2
++2006164211.0ns lost udp 3 1 0b000001 0b000601 10000 100 57833000 14231
++2006165217.0ns receive loss notification and update ReTxReqs 14231
++2006165447.0ns copyqueue retransmit 2 2 57833000 14231
++2006169332.0ns receive lgpause 2 2
++2006173727.0ns receive lgresume 2 2
++2006179564.0ns receive lgpause 2 2
++2006186708.0ns receive lgresume 2 2
++2006194092.0ns lost udp 3 1 0b000001 0b000601 10000 100 58042000 14493
++2006195179.0ns receive loss notification and update ReTxReqs 14493
++2006195780.0ns copyqueue retransmit 2 2 58042000 14493
++2006196948.0ns drop protected normal data p ackNo 3 1 14493 14494
++2006199226.0ns receive lgpause 2 2
++2006204270.0ns receive lgresume 2 2
++2006414405.0ns lost udp 3 1 0b000001 0b000601 10000 100 60386000 18145
++2006415411.0ns receive loss notification and update ReTxReqs 18145
++2006415446.0ns copyqueue retransmit 2 2 60386000 18145
++2006416631.0ns drop protected normal data p ackNo 3 1 18145 18146
++2006419820.0ns receive lgpause 2 2
++2006433714.0ns receive lgresume 2 2
++2006439569.0ns receive lgpause 2 2
++2006446713.0ns receive lgresume 2 2
++2006475937.0ns lost udp 3 1 0b000001 0b000601 10000 100 60858000 18673
++2006477024.0ns receive loss notification and update ReTxReqs 18673
++2006477625.0ns copyqueue retransmit 2 2 60858000 18673
++2006478793.0ns drop protected normal data p ackNo 3 1 18673 18674
++2006481071.0ns receive lgpause 2 2
++2006486115.0ns receive lgresume 2 2
++2006488291.0ns lost udp 3 1 0b000001 0b000601 10000 100 60944000 18760
++2006489378.0ns receive loss notification and update ReTxReqs 18760
++2006489475.0ns copyqueue retransmit 2 2 60944000 18760
++2006493089.0ns receive lgpause 2 2
++2006499057.0ns receive lgresume 2 2
++2006522821.0ns lost udp 3 1 0b000001 0b000601 10000 100 61283000 19100
++2006523908.0ns receive loss notification and update ReTxReqs 19100
++2006524509.0ns copyqueue retransmit 2 2 61283000 19100
++2006525677.0ns drop protected normal data p ackNo 3 1 19100 19101
++2006527787.0ns receive lgpause 2 2
++2006533251.0ns receive lgresume 2 2
++2006631103.0ns lost udp 3 1 0b000001 0b000601 10000 100 62506000 20324
++2006632190.0ns receive loss notification and update ReTxReqs 20324
++2006632791.0ns copyqueue retransmit 2 2 62506000 20324
++2006633959.0ns drop protected normal data p ackNo 3 1 20324 20326
++2006791705.0ns lost udp 3 1 0b000001 0b000601 10000 100 64236000 23134
++2006792711.0ns receive loss notification and update ReTxReqs 23134
++2006792727.0ns copyqueue retransmit 2 2 64236000 23134
++2006793931.0ns drop protected normal data p ackNo 3 1 23134 23135
++2006797120.0ns receive lgpause 2 2
++2006811014.0ns receive lgresume 2 2
++2006816869.0ns receive lgpause 2 2
++2006824013.0ns receive lgresume 2 2
++2007032589.0ns lost udp 3 1 0b000001 0b000601 10000 100 66694000 26543
++2007033595.0ns receive loss notification and update ReTxReqs 26543
++2007035021.0ns copyqueue retransmit 2 2 66694000 26543
++2007036190.0ns drop protected normal data p ackNo 3 1 26543 26544
++2007038082.0ns receive lgpause 2 2
++2007052015.0ns receive lgresume 2 2
++2007057687.0ns receive lgpause 2 2
++2007065176.0ns receive lgresume 2 2
++2007076256.0ns lost udp 3 1 0b000001 0b000601 10000 100 66949000 26856
++2007077343.0ns receive loss notification and update ReTxReqs 26856
++2007077944.0ns copyqueue retransmit 2 2 66949000 26856
++2007079112.0ns drop protected normal data p ackNo 3 1 26856 26857
++2007081891.0ns receive lgpause 2 2
++2007087607.0ns receive lgresume 2 2
++2007119603.0ns lost udp 3 1 0b000001 0b000601 10000 100 67395000 27303
++2007120690.0ns receive loss notification and update ReTxReqs 27303
++2007121291.0ns copyqueue retransmit 2 2 67395000 27303
++2007122459.0ns drop protected normal data p ackNo 3 1 27303 27304
++2007124569.0ns receive lgpause 2 2
++2007129529.0ns receive lgresume 2 2
++2007333029.0ns lost udp 3 1 0b000001 0b000601 10000 100 69763000 30372
++2007334035.0ns receive loss notification and update ReTxReqs 30372
++2007334069.0ns copyqueue retransmit 2 2 69763000 30372
++2007335237.0ns drop protected normal data p ackNo 3 1 30372 30373
++2007338339.0ns receive lgpause 2 2
++2007351993.0ns receive lgresume 2 2
++2007357842.0ns receive lgpause 2 2
++2007358789.0ns lost udp 3 1 0b000001 0b000601 10000 100 69897000 30560
++2007359878.0ns receive loss notification and update ReTxReqs 30560
++2007360305.0ns copyqueue retransmit 2 2 69897000 30560
++2007365157.0ns receive lgresume 2 2
++2007370874.0ns receive lgpause 2 2
++2007381807.0ns receive lgresume 2 2
++2007520147.0ns lost udp 3 1 0b000001 0b000601 10000 100 71602000 32268
++2007521234.0ns receive loss notification and update ReTxReqs 32268
++2007521835.0ns copyqueue retransmit 2 2 71602000 32268
++2007523003.0ns drop protected normal data p ackNo 3 1 32268 32270
++2008039577.0ns lost udp 3 1 0b000001 0b000601 10000 100 77047000 42474
++2008040583.0ns receive loss notification and update ReTxReqs 42474
++2008040619.0ns copyqueue retransmit 2 2 77047000 42474
++2008041787.0ns drop protected normal data p ackNo 3 1 42474 42475
++2008044887.0ns receive lgpause 2 2
++2008058541.0ns receive lgresume 2 2
++2008062733.0ns lost udp 3 1 0b000001 0b000601 10000 100 77150000 42631
++2008063820.0ns receive loss notification and update ReTxReqs 42631
++2008064421.0ns copyqueue retransmit 2 2 77150000 42631
++2008064474.0ns receive lgpause 2 2
++2008071618.0ns receive lgresume 2 2
++2008074557.0ns receive lgpause 2 2
++2008079016.0ns receive lgresume 2 2
++2008084817.0ns receive lgpause 2 2
++2008092129.0ns receive lgresume 2 2
++2008212745.0ns lost udp 3 1 0b000001 0b000601 10000 100 78711000 44195
++2008212913.0ns lost udp 3 1 0b000001 0b000601 10000 100 78713000 44197
++2008213832.0ns receive loss notification and update ReTxReqs 44195
++2008214000.0ns receive loss notification and update ReTxReqs 44195
++2008214000.0ns receive loss notification and update ReTxReqs 44197
++2008214433.0ns copyqueue retransmit 2 2 78711000 44195
++2008214601.0ns copyqueue retransmit 2 2 78713000 44197
++2008215601.0ns drop protected normal data p ackNo 3 1 44195 44196
++2008217879.0ns receive lgpause 2 2
++2008227798.0ns receive lgresume 2 2
++2008233596.0ns receive lgpause 2 2
++2008240908.0ns receive lgresume 2 2
++2008261732.0ns lost udp 3 1 0b000001 0b000601 10000 100 79087000 44573
++2008262819.0ns receive loss notification and update ReTxReqs 44573
++2008263420.0ns copyqueue retransmit 2 2 79087000 44573
++2008264588.0ns drop protected normal data p ackNo 3 1 44573 44574
++2008267034.0ns receive lgpause 2 2
++2008272330.0ns receive lgresume 2 2
++2008308862.0ns lost udp 3 1 0b000001 0b000601 10000 100 79584000 45071
++2008309949.0ns receive loss notification and update ReTxReqs 45071
++2008310550.0ns copyqueue retransmit 2 2 79584000 45071
++2008311718.0ns drop protected normal data p ackNo 3 1 45071 45072
++2008313828.0ns receive lgpause 2 2
++2008319460.0ns receive lgresume 2 2
++2008358428.0ns lost udp 3 1 0b000001 0b000601 10000 100 80106000 45594
++2008359515.0ns receive loss notification and update ReTxReqs 45594
++2008360116.0ns copyqueue retransmit 2 2 80106000 45594
++2008361284.0ns drop protected normal data p ackNo 3 1 45594 45595
++2008363394.0ns receive lgpause 2 2
++2008369194.0ns receive lgresume 2 2
++2008381702.0ns lost udp 3 1 0b000001 0b000601 10000 100 80313000 45802
++2008382789.0ns receive loss notification and update ReTxReqs 45802
++2008383390.0ns copyqueue retransmit 2 2 80313000 45802
++2008384558.0ns drop protected normal data p ackNo 3 1 45802 45803
++2008386668.0ns receive lgpause 2 2
++2008392300.0ns receive lgresume 2 2
++2008405900.0ns lost udp 3 1 0b000001 0b000601 10000 100 80533000 46023
++2008406987.0ns receive loss notification and update ReTxReqs 46023
++2008407588.0ns copyqueue retransmit 2 2 80533000 46023
++2008408756.0ns drop protected normal data p ackNo 3 1 46023 46024
++2008410866.0ns receive lgpause 2 2
++2008416666.0ns receive lgresume 2 2
++2008594906.0ns lost udp 3 1 0b000001 0b000601 10000 100 82713000 48204
++2008595993.0ns receive loss notification and update ReTxReqs 48204
++2008596594.0ns copyqueue retransmit 2 2 82713000 48204
++2008597762.0ns drop protected normal data p ackNo 3 1 48204 48205
++2008599872.0ns receive lgpause 2 2
++2008605504.0ns receive lgresume 2 2
++2009272470.0ns lost udp 3 1 0b000001 0b000601 10000 100 89840000 61431
++2009273476.0ns receive loss notification and update ReTxReqs 61431
++2009274900.0ns copyqueue retransmit 2 2 89840000 61431
++2009276094.0ns drop protected normal data p ackNo 3 1 61431 61432
++2009277779.0ns receive lgpause 2 2
++2009291511.0ns receive lgresume 2 2
++2009297174.0ns receive lgpause 2 2
++2009304663.0ns receive lgresume 2 2
++2009363875.0ns lost udp 3 1 0b000001 0b000601 10000 100 90667000 62312
++2009364962.0ns receive loss notification and update ReTxReqs 62312
++2009365563.0ns copyqueue retransmit 2 2 90667000 62312
++2009366731.0ns drop protected normal data p ackNo 3 1 62312 62313
++2009369510.0ns receive lgpause 2 2
++2009375226.0ns receive lgresume 2 2
++2009505462.0ns lost udp 3 1 0b000001 0b000601 10000 100 92267000 64022
++2009506468.0ns receive loss notification and update ReTxReqs 64022
++2009506518.0ns copyqueue retransmit 2 2 92267000 64022
++2009507742.0ns drop protected normal data p ackNo 3 1 64022 64023
++2009510825.0ns receive lgpause 2 2
++2009519883.0ns receive lgresume 2 2
++2009525729.0ns receive lgpause 2 2
++2009532705.0ns receive lgresume 2 2
++2009578141.0ns lost udp 3 1 0b000001 0b000601 10000 100 92933000 64743
++2009579228.0ns receive loss notification and update ReTxReqs 64743
++2009579829.0ns copyqueue retransmit 2 2 92933000 64743
++2009580997.0ns drop protected normal data p ackNo 3 1 64743 64744
++2009583107.0ns receive lgpause 2 2
++2009587899.0ns receive lgresume 2 2
++2009628967.0ns lost udp 3 1 0b000001 0b000601 10000 100 93480000 65291
++2009630054.0ns receive loss notification and update ReTxReqs 65291
++2009630655.0ns copyqueue retransmit 2 2 93480000 65291
++2009633765.0ns receive lgpause 2 2
++2009640069.0ns receive lgresume 2 2
++2009659717.0ns lost udp 3 1 0b000001 0b000601 10000 100 93770000 46
++2009660804.0ns receive loss notification and update ReTxReqs 46
++2009661405.0ns copyqueue retransmit 2 2 93770000 46
++2009662573.0ns drop protected normal data p ackNo 3 1 46 47
++2009664683.0ns receive lgpause 2 2
++2009669811.0ns receive lgresume 2 2
++2009765395.0ns lost udp 3 1 0b000001 0b000601 10000 100 94966000 1243
++2009766482.0ns receive loss notification and update ReTxReqs 1243
++2009767083.0ns copyqueue retransmit 2 2 94966000 1243
++2009770193.0ns receive lgpause 2 2
++2009776497.0ns receive lgresume 2 2
++2009800765.0ns lost udp 3 1 0b000001 0b000601 10000 100 95311000 1589
++2009801852.0ns receive loss notification and update ReTxReqs 1589
++2009802453.0ns copyqueue retransmit 2 2 95311000 1589
++2009803621.0ns drop protected normal data p ackNo 3 1 1589 1590
++2009805731.0ns receive lgpause 2 2
++2009810859.0ns receive lgresume 2 2
++2009867094.0ns lost udp 3 1 0b000001 0b000601 10000 100 96034000 2345
++2009868100.0ns receive loss notification and update ReTxReqs 2345
++2009868147.0ns copyqueue retransmit 2 2 96034000 2345
++2009872160.0ns receive lgpause 2 2
++2009876742.0ns receive lgresume 2 2
++2009882579.0ns receive lgpause 2 2
++2009889723.0ns receive lgresume 2 2
++2009892403.0ns lost udp 3 1 0b000001 0b000601 10000 100 96188000 2551
++2009893490.0ns receive loss notification and update ReTxReqs 2551
++2009894007.0ns copyqueue retransmit 2 2 96188000 2551
++2009895175.0ns drop protected normal data p ackNo 3 1 2551 2552
++2009897537.0ns receive lgpause 2 2
++2009902581.0ns receive lgresume 2 2
++2009906017.0ns lost udp 3 1 0b000001 0b000601 10000 100 96289000 2653
++2009907104.0ns receive loss notification and update ReTxReqs 2653
++2009907705.0ns copyqueue retransmit 2 2 96289000 2653
++2009908873.0ns drop protected normal data p ackNo 3 1 2653 2655
++2009993041.0ns lost udp 3 1 0b000001 0b000601 10000 100 97323000 3687
++2009994128.0ns receive loss notification and update ReTxReqs 3687
++2009994393.0ns copyqueue retransmit 2 2 97323000 3687
++2010007321.0ns lost udp 3 1 0b000001 0b000601 10000 100 97491000 3855
++2010008408.0ns receive loss notification and update ReTxReqs 3855
++2010009765.0ns copyqueue retransmit 2 2 97491000 3855
++2010010975.0ns drop protected normal data p ackNo 3 1 3855 3856
++2010012371.0ns receive lgpause 2 2
++2010017007.0ns receive lgresume 2 2
++2010022805.0ns receive lgpause 2 2
++2010029949.0ns receive lgresume 2 2
++2010071773.0ns lost udp 3 1 0b000001 0b000601 10000 100 98115000 4497
++2010072860.0ns receive loss notification and update ReTxReqs 4497
++2010073461.0ns copyqueue retransmit 2 2 98115000 4497
++2010074629.0ns drop protected normal data p ackNo 3 1 4497 4498
++2010076907.0ns receive lgpause 2 2
++2010081951.0ns receive lgresume 2 2
++2010223702.0ns lost udp 3 1 0b000001 0b000601 10000 100 99773000 6841
++2010224708.0ns receive loss notification and update ReTxReqs 6841
++2010224751.0ns copyqueue retransmit 2 2 99773000 6841
++2010225960.0ns drop protected normal data p ackNo 3 1 6841 6842
++2010228914.0ns receive lgpause 2 2
++2010242886.0ns receive lgresume 2 2
++2010248729.0ns receive lgpause 2 2
++2010256041.0ns receive lgresume 2 2
++2010258217.0ns lost udp 3 1 0b000001 0b000601 10000 100 99923000 7044
++2010259304.0ns receive loss notification and update ReTxReqs 7044
++2010259401.0ns copyqueue retransmit 2 2 99923000 7044
++2010260569.0ns drop protected normal data p ackNo 3 1 7044 7045
++2010263519.0ns receive lgpause 2 2
++2010268983.0ns receive lgresume 2 2
++2010331051.0ns lost udp 3 1 0b000001 0b000601 10000 100 100724000 7846
++2010332138.0ns receive loss notification and update ReTxReqs 7846
++2010332739.0ns copyqueue retransmit 2 2 100724000 7846
++2010333907.0ns drop protected normal data p ackNo 3 1 7846 7847
++2010336017.0ns receive lgpause 2 2
++2010341313.0ns receive lgresume 2 2
++2010576627.0ns lost udp 3 1 0b000001 0b000601 10000 100 103488000 11340
++2010577633.0ns receive loss notification and update ReTxReqs 11340
++2010577689.0ns copyqueue retransmit 2 2 103488000 11340
++2010578885.0ns drop protected normal data p ackNo 3 1 11340 11341
++2010581839.0ns receive lgpause 2 2
++2010595811.0ns receive lgresume 2 2
++2010601654.0ns receive lgpause 2 2
++2010608966.0ns receive lgresume 2 2
++2010781637.0ns lost udp 3 1 0b000001 0b000601 10000 100 105646000 13717
++2010782643.0ns receive loss notification and update ReTxReqs 13717
++2010782678.0ns copyqueue retransmit 2 2 105646000 13717
++2010783895.0ns drop protected normal data p ackNo 3 1 13717 13718
++2010786849.0ns receive lgpause 2 2
++2010800821.0ns receive lgresume 2 2
++2010806664.0ns receive lgpause 2 2
++2010813976.0ns receive lgresume 2 2
++2010896204.0ns lost udp 3 1 0b000001 0b000601 10000 100 106749000 14873
++2010897291.0ns receive loss notification and update ReTxReqs 14873
++2010897892.0ns copyqueue retransmit 2 2 106749000 14873
++2010899060.0ns drop protected normal data p ackNo 3 1 14873 14874
++2010901506.0ns receive lgpause 2 2
++2010906802.0ns receive lgresume 2 2
++2011016834.0ns lost udp 3 1 0b000001 0b000601 10000 100 108121000 16246
++2011017921.0ns receive loss notification and update ReTxReqs 16246
++2011018438.0ns copyqueue retransmit 2 2 108121000 16246
++2011019685.0ns drop protected normal data p ackNo 3 1 16246 16247
++2011022094.0ns receive lgpause 2 2
++2011026844.0ns receive lgresume 2 2
++2011032666.0ns receive lgpause 2 2
++2011039642.0ns receive lgresume 2 2
++2011041314.0ns lost udp 3 1 0b000001 0b000601 10000 100 108266000 16439
++2011042401.0ns receive loss notification and update ReTxReqs 16439
++2011043254.0ns copyqueue retransmit 2 2 108266000 16439
++2011044422.0ns drop protected normal data p ackNo 3 1 16439 16440
++2011046280.0ns receive lgpause 2 2
++2011051072.0ns receive lgresume 2 2
++2011104656.0ns lost udp 3 1 0b000001 0b000601 10000 100 108962000 17136
++2011105743.0ns receive loss notification and update ReTxReqs 17136
++2011106344.0ns copyqueue retransmit 2 2 108962000 17136
++2011109454.0ns receive lgpause 2 2
++2011115758.0ns receive lgresume 2 2
++2011154810.0ns lost udp 3 1 0b000001 0b000601 10000 100 109483000 17658
++2011155897.0ns receive loss notification and update ReTxReqs 17658
++2011156498.0ns copyqueue retransmit 2 2 109483000 17658
++2011157666.0ns drop protected normal data p ackNo 3 1 17658 17659
++2011159776.0ns receive lgpause 2 2
++2011164904.0ns receive lgresume 2 2
++2011237472.0ns lost udp 3 1 0b000001 0b000601 10000 100 110405000 18581
++2011238559.0ns receive loss notification and update ReTxReqs 18581
++2011239160.0ns copyqueue retransmit 2 2 110405000 18581
++2011242270.0ns receive lgpause 2 2
++2011248574.0ns receive lgresume 2 2
++2011269398.0ns lost udp 3 1 0b000001 0b000601 10000 100 110709000 18886
++2011270485.0ns receive loss notification and update ReTxReqs 18886
++2011271086.0ns copyqueue retransmit 2 2 110709000 18886
++2011272254.0ns drop protected normal data p ackNo 3 1 18886 18887
++2011274364.0ns receive lgpause 2 2
++2011279492.0ns receive lgresume 2 2
++2011336436.0ns lost udp 3 1 0b000001 0b000601 10000 100 111445000 19623
++2011337523.0ns receive loss notification and update ReTxReqs 19623
++2011338124.0ns copyqueue retransmit 2 2 111445000 19623
++2011341234.0ns receive lgpause 2 2
++2011347538.0ns receive lgresume 2 2
++2011408598.0ns lost udp 3 1 0b000001 0b000601 10000 100 112228000 20407
++2011409685.0ns receive loss notification and update ReTxReqs 20407
++2011410286.0ns copyqueue retransmit 2 2 112228000 20407
++2011411454.0ns drop protected normal data p ackNo 3 1 20407 20408
++2011413564.0ns receive lgpause 2 2
++2011418692.0ns receive lgresume 2 2
++2011453040.0ns lost udp 3 1 0b000001 0b000601 10000 100 112695000 20875
++2011454127.0ns receive loss notification and update ReTxReqs 20875
++2011454728.0ns copyqueue retransmit 2 2 112695000 20875
++2011457838.0ns receive lgpause 2 2
++2011464142.0ns receive lgresume 2 2
++2011502774.0ns lost udp 3 1 0b000001 0b000601 10000 100 113211000 21392
++2011503861.0ns receive loss notification and update ReTxReqs 21392
++2011504462.0ns copyqueue retransmit 2 2 113211000 21392
++2011505210.0ns lost udp 3 1 0b000001 0b000601 10000 100 113240000 21421
++2011505630.0ns drop protected normal data p ackNo 3 1 21392 21393
++2011506297.0ns receive loss notification and update ReTxReqs 21421
++2011506730.0ns copyqueue retransmit 2 2 113240000 21421
++2011507824.0ns receive lgpause 2 2
++2011512784.0ns receive lgresume 2 2
++2011515219.0ns receive lgpause 2 2
++2011521694.0ns receive lgresume 2 2
++2011525056.0ns receive lgpause 2 2
++2011530358.0ns receive lgresume 2 2
++2011578650.0ns lost udp 3 1 0b000001 0b000601 10000 100 113913000 22097
++2011579737.0ns receive loss notification and update ReTxReqs 22097
++2011580338.0ns copyqueue retransmit 2 2 113913000 22097
++2011592510.0ns lost udp 3 1 0b000001 0b000601 10000 100 114076000 22260
++2011593597.0ns receive loss notification and update ReTxReqs 22260
++2011593862.0ns copyqueue retransmit 2 2 114076000 22260
++2011597308.0ns receive lgpause 2 2
++2011603108.0ns receive lgresume 2 2
++2011827635.0ns lost udp 3 1 0b000001 0b000601 10000 100 116693000 25820
++2011828199.0ns lost udp 3 1 0b000001 0b000601 10000 100 116699000 25832
++2011828641.0ns receive loss notification and update ReTxReqs 25820
++2011828648.0ns copyqueue retransmit 2 2 116693000 25820
++2011829205.0ns receive loss notification and update ReTxReqs 25832
++2011829236.0ns copyqueue retransmit 2 2 116699000 25832
++2011829871.0ns drop protected normal data p ackNo 3 1 25820 25821
++2011832930.0ns receive lgpause 2 2
++2011852212.0ns receive lgresume 2 2
++2011857998.0ns receive lgpause 2 2
++2011865313.0ns receive lgresume 2 2
++2011896805.0ns lost udp 3 1 0b000001 0b000601 10000 100 117192000 26355
++2011897892.0ns receive loss notification and update ReTxReqs 26355
++2011898493.0ns copyqueue retransmit 2 2 117192000 26355
++2011899661.0ns drop protected normal data p ackNo 3 1 26355 26356
++2011902272.0ns receive lgpause 2 2
++2011907736.0ns receive lgresume 2 2
++2011935952.0ns lost udp 3 1 0b000001 0b000601 10000 100 117591000 26755
++2011937039.0ns receive loss notification and update ReTxReqs 26755
++2011937640.0ns copyqueue retransmit 2 2 117591000 26755
++2011938808.0ns drop protected normal data p ackNo 3 1 26755 26756
++2011939984.0ns lost udp 3 1 0b000001 0b000601 10000 100 117637000 26801
++2011940918.0ns receive lgpause 2 2
++2011941071.0ns receive loss notification and update ReTxReqs 26801
++2011941336.0ns copyqueue retransmit 2 2 117637000 26801
++2011946214.0ns receive lgresume 2 2
++2011949828.0ns receive lgpause 2 2
++2011960095.0ns receive lgresume 2 2
++2012133379.0ns lost udp 3 1 0b000001 0b000601 10000 100 119756000 28923
++2012134466.0ns receive loss notification and update ReTxReqs 28923
++2012135067.0ns copyqueue retransmit 2 2 119756000 28923
++2012136235.0ns drop protected normal data p ackNo 3 1 28923 28924
++2012138345.0ns receive lgpause 2 2
++2012143305.0ns receive lgresume 2 2
++2012177653.0ns lost udp 3 1 0b000001 0b000601 10000 100 120223000 29391
++2012178740.0ns receive loss notification and update ReTxReqs 29391
++2012179341.0ns copyqueue retransmit 2 2 120223000 29391
++2012182451.0ns receive lgpause 2 2
++2012188755.0ns receive lgresume 2 2
++2012211679.0ns lost udp 3 1 0b000001 0b000601 10000 100 120552000 29721
++2012212766.0ns receive loss notification and update ReTxReqs 29721
++2012213367.0ns copyqueue retransmit 2 2 120552000 29721
++2012214535.0ns drop protected normal data p ackNo 3 1 29721 29722
++2012216645.0ns receive lgpause 2 2
++2012221773.0ns receive lgresume 2 2
++2012280481.0ns lost udp 3 1 0b000001 0b000601 10000 100 121309000 30479
++2012281568.0ns receive loss notification and update ReTxReqs 30479
++2012282169.0ns copyqueue retransmit 2 2 121309000 30479
++2012285279.0ns receive lgpause 2 2
++2012291583.0ns receive lgresume 2 2
++2012304931.0ns lost udp 3 1 0b000001 0b000601 10000 100 121524000 30695
++2012306018.0ns receive loss notification and update ReTxReqs 30695
++2012306619.0ns copyqueue retransmit 2 2 121524000 30695
++2012307787.0ns drop protected normal data p ackNo 3 1 30695 30696
++2012309897.0ns receive lgpause 2 2
++2012315025.0ns receive lgresume 2 2
++2012331985.0ns lost udp 3 1 0b000001 0b000601 10000 100 121784000 30956
++2012333072.0ns receive loss notification and update ReTxReqs 30956
++2012333673.0ns copyqueue retransmit 2 2 121784000 30956
++2012336783.0ns receive lgpause 2 2
++2012337193.0ns lost udp 3 1 0b000001 0b000601 10000 100 121844000 31016
++2012338280.0ns receive loss notification and update ReTxReqs 31016
++2012338881.0ns copyqueue retransmit 2 2 121844000 31016
++2012343255.0ns receive lgresume 2 2
++2012348387.0ns receive lgpause 2 2
++2012359320.0ns receive lgresume 2 2
++2012360572.0ns lost udp 3 1 0b000001 0b000601 10000 100 121917000 31092
++2012361659.0ns receive loss notification and update ReTxReqs 31092
++2012361756.0ns copyqueue retransmit 2 2 121917000 31092
++2012365370.0ns receive lgpause 2 2
++2012371002.0ns receive lgresume 2 2
++2012381662.0ns lost udp 3 1 0b000001 0b000601 10000 100 122100000 31276
++2012382749.0ns receive loss notification and update ReTxReqs 31276
++2012383350.0ns copyqueue retransmit 2 2 122100000 31276
++2012384518.0ns drop protected normal data p ackNo 3 1 31276 31277
++2012386628.0ns receive lgpause 2 2
++2012392428.0ns receive lgresume 2 2
++2012484484.0ns lost udp 3 1 0b000001 0b000601 10000 100 123254000 32431
++2012485571.0ns receive loss notification and update ReTxReqs 32431
++2012486172.0ns copyqueue retransmit 2 2 123254000 32431
++2012487340.0ns drop protected normal data p ackNo 3 1 32431 32432
++2012489450.0ns receive lgpause 2 2
++2012495082.0ns receive lgresume 2 2
++2012546902.0ns lost udp 3 1 0b000001 0b000601 10000 100 123929000 33107
++2012547989.0ns receive loss notification and update ReTxReqs 33107
++2012548590.0ns copyqueue retransmit 2 2 123929000 33107
++2012549758.0ns drop protected normal data p ackNo 3 1 33107 33108
++2012551868.0ns receive lgpause 2 2
++2012557668.0ns receive lgresume 2 2
++2012924751.0ns lost udp 3 1 0b000001 0b000601 10000 100 127112000 39166
++2012925757.0ns receive loss notification and update ReTxReqs 39166
++2012927184.0ns copyqueue retransmit 2 2 127112000 39166
++2012928352.0ns drop protected normal data p ackNo 3 1 39166 39167
++2012930596.0ns receive lgpause 2 2
++2012947665.0ns receive lgresume 2 2
++2012952752.0ns receive lgpause 2 2
++2012960094.0ns receive lgresume 2 2
++2012983774.0ns lost udp 3 1 0b000001 0b000601 10000 100 127505000 39617
++2012984861.0ns receive loss notification and update ReTxReqs 39617
++2012985462.0ns copyqueue retransmit 2 2 127505000 39617
++2012986630.0ns drop protected normal data p ackNo 3 1 39617 39618
++2012989745.0ns receive lgpause 2 2
++2012995713.0ns receive lgresume 2 2
++2013046021.0ns lost udp 3 1 0b000001 0b000601 10000 100 128173000 40286
++2013047108.0ns receive loss notification and update ReTxReqs 40286
++2013047709.0ns copyqueue retransmit 2 2 128173000 40286
++2013048877.0ns drop protected normal data p ackNo 3 1 40286 40287
++2013050987.0ns receive lgpause 2 2
++2013055863.0ns receive lgresume 2 2
++2013139652.0ns lost udp 3 1 0b000001 0b000601 10000 100 129132000 41724
++2013140658.0ns receive loss notification and update ReTxReqs 41724
++2013140703.0ns copyqueue retransmit 2 2 129132000 41724
++2013141571.0ns lost udp 3 1 0b000001 0b000601 10000 100 129151000 41762
++2013141941.0ns drop protected normal data p ackNo 3 1 41724 41725
++2013142577.0ns receive loss notification and update ReTxReqs 41762
++2013143979.0ns copyqueue retransmit 2 2 129151000 41762
++2013145321.0ns receive lgpause 2 2
++2013162806.0ns receive lgresume 2 2
++2013168190.0ns receive lgpause 2 2
++2013175604.0ns receive lgresume 2 2
++2013224148.0ns lost udp 3 1 0b000001 0b000601 10000 100 129829000 42471
++2013225235.0ns receive loss notification and update ReTxReqs 42471
++2013225836.0ns copyqueue retransmit 2 2 129829000 42471
++2013227004.0ns drop protected normal data p ackNo 3 1 42471 42472
++2013229951.0ns receive lgpause 2 2
++2013235835.0ns receive lgresume 2 2
++2013245235.0ns lost udp 3 1 0b000001 0b000601 10000 100 130008000 42651
++2013246322.0ns receive loss notification and update ReTxReqs 42651
++2013246923.0ns copyqueue retransmit 2 2 130008000 42651
++2013248091.0ns drop protected normal data p ackNo 3 1 42651 42652
++2013250201.0ns receive lgpause 2 2
++2013255077.0ns receive lgresume 2 2
++2013277077.0ns lost udp 3 1 0b000001 0b000601 10000 100 130328000 42972
++2013278164.0ns receive loss notification and update ReTxReqs 42972
++2013278765.0ns copyqueue retransmit 2 2 130328000 42972
++2013281875.0ns receive lgpause 2 2
++2013288179.0ns receive lgresume 2 2
++2013331935.0ns lost udp 3 1 0b000001 0b000601 10000 100 130905000 43550
++2013333022.0ns receive loss notification and update ReTxReqs 43550
++2013333623.0ns copyqueue retransmit 2 2 130905000 43550
++2013334791.0ns drop protected normal data p ackNo 3 1 43550 43551
++2013336901.0ns receive lgpause 2 2
++2013342029.0ns receive lgresume 2 2
++2013698396.0ns lost udp 3 1 0b000001 0b000601 10000 100 134812000 50067
++2013699402.0ns receive loss notification and update ReTxReqs 50067
++2013699449.0ns copyqueue retransmit 2 2 134812000 50067
++2013700654.0ns drop protected normal data p ackNo 3 1 50067 50068
++2013702576.0ns lost udp 3 1 0b000001 0b000601 10000 100 134856000 50140
++2013703582.0ns receive loss notification and update ReTxReqs 50140
++2013703695.0ns receive lgpause 2 2
++2013704825.0ns copyqueue retransmit 2 2 134856000 50140
++2013718531.0ns receive lgresume 2 2
++2013722226.0ns receive lgpause 2 2
++2013732349.0ns receive lgresume 2 2
++2014124032.0ns lost udp 3 1 0b000001 0b000601 10000 100 139311000 56791
++2014125038.0ns receive loss notification and update ReTxReqs 56791
++2014125133.0ns copyqueue retransmit 2 2 139311000 56791
++2014126362.0ns drop protected normal data p ackNo 3 1 56791 56792
++2014129237.0ns receive lgpause 2 2
++2014143203.0ns receive lgresume 2 2
++2014149040.0ns receive lgpause 2 2
++2014156352.0ns receive lgresume 2 2
++2014505672.0ns lost udp 3 1 0b000001 0b000601 10000 100 143371000 62774
++2014506678.0ns receive loss notification and update ReTxReqs 62774
++2014506716.0ns copyqueue retransmit 2 2 143371000 62774
++2014507908.0ns drop protected normal data p ackNo 3 1 62774 62775
++2014510877.0ns receive lgpause 2 2
++2014511218.0ns lost udp 3 1 0b000001 0b000601 10000 100 143430000 62876
++2014512224.0ns receive loss notification and update ReTxReqs 62876
++2014512764.0ns copyqueue retransmit 2 2 143430000 62876
++2014525272.0ns receive lgresume 2 2
++2014530350.0ns receive lgpause 2 2
++2014542486.0ns receive lgresume 2 2
++2014563226.0ns lost udp 3 1 0b000001 0b000601 10000 100 143733000 63189
++2014564313.0ns receive loss notification and update ReTxReqs 63189
++2014564914.0ns copyqueue retransmit 2 2 143733000 63189
++2014565158.0ns lost udp 3 1 0b000001 0b000601 10000 100 143756000 63212
++2014566082.0ns drop protected normal data p ackNo 3 1 63189 63190
++2014566245.0ns receive loss notification and update ReTxReqs 63212
++2014566678.0ns copyqueue retransmit 2 2 143756000 63212
++2014568612.0ns receive lgpause 2 2
++2014577607.0ns receive lgresume 2 2
++2014590031.0ns lost udp 3 1 0b000001 0b000601 10000 100 143942000 63399
++2014591118.0ns receive loss notification and update ReTxReqs 63399
++2014591719.0ns copyqueue retransmit 2 2 143942000 63399
++2014594829.0ns receive lgpause 2 2
++2014601133.0ns receive lgresume 2 2
++2014657321.0ns lost udp 3 1 0b000001 0b000601 10000 100 144667000 64125
++2014658408.0ns receive loss notification and update ReTxReqs 64125
++2014659009.0ns copyqueue retransmit 2 2 144667000 64125
++2014660177.0ns drop protected normal data p ackNo 3 1 64125 64126
++2014662287.0ns receive lgpause 2 2
++2014667415.0ns receive lgresume 2 2
++2014715875.0ns lost udp 3 1 0b000001 0b000601 10000 100 145302000 64761
++2014716962.0ns receive loss notification and update ReTxReqs 64761
++2014717563.0ns copyqueue retransmit 2 2 145302000 64761
++2014720673.0ns receive lgpause 2 2
++2014726977.0ns receive lgresume 2 2
++2014784677.0ns lost udp 3 1 0b000001 0b000601 10000 100 146045000 65505
++2014785764.0ns receive loss notification and update ReTxReqs 65505
++2014786365.0ns copyqueue retransmit 2 2 146045000 65505
++2014787533.0ns drop protected normal data p ackNo 3 1 65505 65506
++2014789643.0ns receive lgpause 2 2
++2014794771.0ns receive lgresume 2 2
++2014813327.0ns lost udp 3 1 0b000001 0b000601 10000 100 146324000 249
++2014814414.0ns receive loss notification and update ReTxReqs 249
++2014815015.0ns copyqueue retransmit 2 2 146324000 249
++2014818125.0ns receive lgpause 2 2
++2014824429.0ns receive lgresume 2 2
++2014845589.0ns lost udp 3 1 0b000001 0b000601 10000 100 146632000 558
++2014846676.0ns receive loss notification and update ReTxReqs 558
++2014847277.0ns copyqueue retransmit 2 2 146632000 558
++2014848445.0ns drop protected normal data p ackNo 3 1 558 559
++2014850555.0ns receive lgpause 2 2
++2014855683.0ns receive lgresume 2 2
++2014886671.0ns lost udp 3 1 0b000001 0b000601 10000 100 147059000 986
++2014887758.0ns receive loss notification and update ReTxReqs 986
++2014888359.0ns copyqueue retransmit 2 2 147059000 986
++2014891469.0ns receive lgpause 2 2
++2014897773.0ns receive lgresume 2 2
++2014937917.0ns lost udp 3 1 0b000001 0b000601 10000 100 147593000 1521
++2014939004.0ns receive loss notification and update ReTxReqs 1521
++2014939605.0ns copyqueue retransmit 2 2 147593000 1521
++2014940773.0ns drop protected normal data p ackNo 3 1 1521 1522
++2014942883.0ns receive lgpause 2 2
++2014948011.0ns receive lgresume 2 2
++2015012263.0ns lost udp 3 1 0b000001 0b000601 10000 100 148416000 2345
++2015013350.0ns receive loss notification and update ReTxReqs 2345
++2015013951.0ns copyqueue retransmit 2 2 148416000 2345
++2015017061.0ns receive lgpause 2 2
++2015023365.0ns receive lgresume 2 2
++2015047633.0ns lost udp 3 1 0b000001 0b000601 10000 100 148761000 2691
++2015048720.0ns receive loss notification and update ReTxReqs 2691
++2015049321.0ns copyqueue retransmit 2 2 148761000 2691
++2015050489.0ns drop protected normal data p ackNo 3 1 2691 2692
++2015052599.0ns receive lgpause 2 2
++2015057727.0ns receive lgresume 2 2
+44.8174

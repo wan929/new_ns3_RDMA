@@ -1,0 +1,24 @@
+python run.py --cc dcqcn --trace flow_small_line_600ms_10load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 0 --tsize 0 --fsize 0 --ftime 0 --ola 0 > /home/wan/test_result/lg/process/small_line_600ms_10load_0_1000.txt
+python run.py --cc dcqcn --trace flow_small_line_200ms_30load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 0 --tsize 0 --fsize 0 --ftime 0 --ola 0 > /home/wan/test_result/lg/process/small_line_200ms_30load_0_1000.txt
+python run.py --cc dcqcn --trace flow_small_line_100ms_60load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 0 --tsize 0 --fsize 0 --ftime 0 --ola 0 > /home/wan/test_result/lg/process/small_line_100ms_60load_0_1000.txt
+python run.py --cc dcqcn --trace flow_small_line_66ms_90load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 0 --tsize 0 --fsize 0 --ftime 0 --ola 0 > /home/wan/test_result/lg/process/small_line_66ms_90load_0_1000.txt
+
+python run.py --cc dcqcn --trace flow_small_line_600ms_10load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 1 --tsize 1000 --fsize 10000 --ftime 50 --ola 0 > /home/wan/test_result/lg/process/small_line_600ms_10load_1_1000_0.txt
+python run.py --cc dcqcn --trace flow_small_line_200ms_30load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 1 --tsize 1000 --fsize 10000 --ftime 50 --ola 0 > /home/wan/test_result/lg/process/small_line_200ms_30load_1_1000_0.txt
+python run.py --cc dcqcn --trace flow_small_line_100ms_60load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 1 --tsize 1000 --fsize 10000 --ftime 50 --ola 0 > /home/wan/test_result/lg/process/small_line_100ms_60load_1_1000_0.txt
+python run.py --cc dcqcn --trace flow_small_line_66ms_90load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 1 --tsize 1000 --fsize 10000 --ftime 50 --ola 0 > /home/wan/test_result/lg/process/small_line_66ms_90load_1_1000_0.txt
+
+python run.py --cc dcqcn --trace flow_small_line_600ms_10load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 1 --tsize 1000 --fsize 10000 --ftime 50 --ola 1 > /home/wan/test_result/lg/process/small_line_600ms_10load_1_1000_1.txt
+python run.py --cc dcqcn --trace flow_small_line_200ms_30load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 1 --tsize 1000 --fsize 10000 --ftime 50 --ola 1 > /home/wan/test_result/lg/process/small_line_200ms_30load_1_1000_1.txt
+python run.py --cc dcqcn --trace flow_small_line_100ms_60load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 1 --tsize 1000 --fsize 10000 --ftime 50 --ola 1 > /home/wan/test_result/lg/process/small_line_100ms_60load_1_1000_1.txt
+python run.py --cc dcqcn --trace flow_small_line_66ms_90load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 1 --tsize 1000 --fsize 10000 --ftime 50 --ola 1 > /home/wan/test_result/lg/process/small_line_66ms_90load_1_1000_1.txt
+
+python run.py --cc dcqcn --trace flow_small_line_600ms_10load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 2 --tsize 0 --fsize 0 --ftime 0 --ola 0 > /home/wan/test_result/lg/process/small_line_600ms_10load_2_1000_0.txt
+python run.py --cc dcqcn --trace flow_small_line_200ms_30load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 2 --tsize 0 --fsize 0 --ftime 0 --ola 0 > /home/wan/test_result/lg/process/small_line_200ms_30load_2_1000_0.txt
+python run.py --cc dcqcn --trace flow_small_line_100ms_60load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 2 --tsize 0 --fsize 0 --ftime 0 --ola 0 > /home/wan/test_result/lg/process/small_line_100ms_60load_2_1000_0.txt
+python run.py --cc dcqcn --trace flow_small_line_66ms_90load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 2 --tsize 0 --fsize 0 --ftime 0 --ola 0 > /home/wan/test_result/lg/process/small_line_66ms_90load_2_1000_0.txt
+
+python run.py --cc dcqcn --trace flow_small_line_600ms_10load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 2 --tsize 0 --fsize 0 --ftime 0 --ola 1 > /home/wan/test_result/lg/process/small_line_600ms_10load_2_1000_1.txt
+python run.py --cc dcqcn --trace flow_small_line_200ms_30load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 2 --tsize 0 --fsize 0 --ftime 0 --ola 1 > /home/wan/test_result/lg/process/small_line_200ms_30load_2_1000_1.txt
+python run.py --cc dcqcn --trace flow_small_line_100ms_60load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 2 --tsize 0 --fsize 0 --ftime 0 --ola 1 > /home/wan/test_result/lg/process/small_line_100ms_60load_2_1000_1.txt
+python run.py --cc dcqcn --trace flow_small_line_66ms_90load --bw 100 --topo topology_line_lg --rto 1 --lossrate 1000 --recmode 2 --tsize 0 --fsize 0 --ftime 0 --ola 1 > /home/wan/test_result/lg/process/small_line_66ms_90load_2_1000_1.txt
