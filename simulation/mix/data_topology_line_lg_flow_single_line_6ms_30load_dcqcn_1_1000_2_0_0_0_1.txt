@@ -1,0 +1,42 @@
+---------Switch-----------
+lookuptable total size of a port(KB)					0.000000KB
+filter total size of a swtich(KB)						0.000000KB
+filter data hash conflict numbers of all switchs		0
+filter data packet numbers of all switchs				0
+filter NACK hash conflict numbers of all switchs		0
+filter NACK packet numbers of all switchs				0
+pfc times of all switchs								0
+lg pause times of all switchs							0
+queue length of up switch								0.000000KB 0.000000KB 0.000000KB 0.000000KB 0.000000KB 0.000000KB
+queue length of up switch								2.719727KB
+queue length of down switch								0.000000KB
+
+---------Host-------------
+extra state size of a single flow(B)					0B
+filter notify packet_numbers of all hosts				0
+timeout numbers of all hosts							0
+seq expected numbers of all hosts						96
+
+---------Lost-------------
+udp lost numbers of all switchs							48
+ack lost numbers of all switchs							0
+last udp lost numbers of all switchs					48
+last ack lost numbers of all switchs					0
+nack lost numbers of all switchs						0
+FB lost numbers of all switchs							0
+total lost numbers of all switchs						0
+
+---------Find-------------
+udp find numbers of all switchs							0
+ack find numbers of all switchs							0
+last udp find numbers of all switchs					0
+last ack find numbers of all switchs					0
+nack find numbers of all switchs						0
+FB find numbers of all switchs							0
+total find numbers of all switchs						0
+
+---------LinkGuardian-------------
+max copy size of up switchs(KB)							0.000000KB 0.000000KB 0.000000KB 0.000000KB 0.000000KB 0.000000KB
+max reordering size of down switchs(KB)					0.000000KB 0.000000KB 0.000000KB 0.000000KB 0.000000KB 0.000000KB
+max copy size of up switchs(KB)							18.387695KB
+max reordering size of down switchs(KB)					0.000000KB

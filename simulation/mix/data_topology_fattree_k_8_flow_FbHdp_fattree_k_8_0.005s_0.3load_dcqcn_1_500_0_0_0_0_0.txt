@@ -1,0 +1,20 @@
+---------Switch-----------
+lookuptable total size of a port(KB)					0.000000KB
+filter total size of a swtich(KB)						0.000000KB
+filter hash conflict numbers of all switchs				0
+filter data_packet numbers of all switchs				0
+
+---------Host-------------
+extra state size of a single flow(B)					0B
+filter notify packet_numbers of all hosts				0
+timeout numbers of all hosts							1105
+seq expected numbers of all hosts						49858
+
+---------Lost-------------
+udp lost numbers of all switchs							92923
+ack lost numbers of all switchs							41097
+last udp lost numbers of all switchs					399
+last ack lost numbers of all switchs					343
+nack lost numbers of all switchs						306
+FB lost numbers of all switchs							0
+total lost numbers of all switchs						134326
